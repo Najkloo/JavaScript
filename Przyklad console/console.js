@@ -46,3 +46,6 @@ tav[3] = 4;
 tab.push(5, 6);
 console.log(tab); // [1, 2, 3, 4, 5, 6]
 tab = [1, 2, 3, 4, 5, 6]; //błąd - podstawiona zupelnie nowa tablica
+
+
+
