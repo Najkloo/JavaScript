@@ -39,11 +39,29 @@ console.log({szesc})
 szesc[1].remove();
 
 
-
-
-
-
 //7
-//const siedem = document.querySelector("footer")
-//console.log({siedem});
-//const dodatek
+const elem =document.createElement("div");
+console.log({elem})
+const siedem = document.querySelector("footer");
+console.log({siedem})
+const text = document.createElement("p");
+console.log(text)
+text.innerHTML = '&copy';
+elem.appendChild(text);
+siedem.appendChild(elem)
+elem.style.backgroundColor = "pink";
+
+
+//8
+const pierwszy = document.createElement('p');
+const head = document.querySelector('header')
+const drugi = document.createElement('p');
+console.log(pierwszy)
+console.log(drugi)
+const pochylony1 = document.createElement('i');
+const pochylony2 = document.createElement('i');
+pochylony1.innerHTML="Pochylony tekst";
+console.log(pochylony1)
+pochylony2.innerText="Pochylony";
+console.log(pochylony2)
+pierwszy.appendChild(pochylony1);
