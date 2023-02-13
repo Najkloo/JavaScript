@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+      <textarea onfocus="this.style.background= 'yellow'">
+
+      </textarea>
+    </div>
+
+
+///oblur
+
+
+    <p>
+        <input type="text" onkeyup="this.value = this.value.toUpperCase();">
+    </p>
+    <p>
+    <select onchange="this.style.color = this.value">
+        <option value="black">BLACK</option>
+        <option value="brown">BROWN</option>
+        <option value="blue">BLUE</option>
+        <option value="bluev">BLUEVIOLET</option>
+        <option value="burlywood">BURLYWOOD</option>
+    </select>
+    </p>
+
+    <p onclick="this.style.fontSize = 'xx-large'" ondblclick="this.style.fontSize = 'medium'">
+        Raz dwa trzy
+    </p>
+
+    <div>
+        <img src="https://loremflickr.com/320/240/dog" oncontextmenu="alert(this.src)">
+    </div>
+
+    <div>
+        <input type="text" onkeyup="document.getElementById('par').innerText = this.value">
+        <p id="par"></p>
+    </div>
+
+    <h1 style="color: green" onmouseover="this.style.textShadow = '2px 5px green'" onmouseout="this.style.textShadow = ' '">
+        MATEUSZ
+    </h1>
+</body>
+</html>
