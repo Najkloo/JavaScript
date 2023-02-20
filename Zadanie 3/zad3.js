@@ -32,8 +32,26 @@ cztery.addEventListener("click", function() {
 const piec = document.querySelector("#guzika")
 piec.addEventListener("click", function() {
     const piata = document.querySelector("#paragraf");
-    piata.setAttribute('cos', 'rtl');
+    piata.setAttribute('dir', 'rtl');
     console.log(piata);
 });
 
 //6
+const szesc = document.querySelector("#guziczek")
+szesc.addEventListener("click", function() {
+    const szosta = document.querySelector("#putek");
+    if(szosta.hasAttribute('disabled')) {
+        document.getElementById('putek').disabled = false
+        szosta.innerHTML = 'Można edytować';
+    }
+    else
+    {
+        document.getElementById('putek').disabled = true
+        szosta.innerHTML = 'Nie mozna edytować'
+    }
+
+
+        console.log(szosta)
+    }
+);
+
