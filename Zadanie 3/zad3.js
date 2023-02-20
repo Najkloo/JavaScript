@@ -18,3 +18,22 @@ trzy.addEventListener("click", function() {
     trzy.style.border='2px dotted red';
 console.log(trzy_ele);
 });
+
+//4
+const cztery = document.querySelector("#guzik")
+cztery.addEventListener("click", function() {
+    const czwora = document.querySelector("#para");
+    czwora.getAttribute('title')
+    alert(czwora.title)
+    console.log(czwora);
+});
+
+//5
+const piec = document.querySelector("#guzika")
+piec.addEventListener("click", function() {
+    const piata = document.querySelector("#paragraf");
+    piata.setAttribute('cos', 'rtl');
+    console.log(piata);
+});
+
+//6
