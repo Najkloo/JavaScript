@@ -54,4 +54,32 @@ szesc.addEventListener("click", function() {
         console.log(szosta)
     }
 );
+//7
+const siedem = document.querySelector('#guzik7')
+siedem.addEventListener("click", function () {
+    const siodmy = document.querySelector('#ps7')
+    const sieben = document.querySelector('#pa7')
+    siodmy.removeAttribute('style')
+    sieben.removeAttribute('href')
 
+    console.log(siodmy);
+    console.log(sieben);
+})
+
+
+
+//8
+const siem = document.querySelector('#guzik8')
+siem.addEventListener("click", function (){
+    const osmy = document.querySelector('#ha3').dataset;
+    const osiem = document.querySelector('#ha3').attributes;
+    console.log(osmy);
+    console.log(osiem);
+    for (const attribute of osiem) {
+        let  para = document.createElement("p");
+        para.innerHTML = "Atrybut: <b>" + attribute.nodeName +
+            "</b> ma wartość </b>" + attribute.nodeValue + "</b>";
+        osiem.appendChild(para);
+    }
+
+})
