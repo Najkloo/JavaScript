@@ -69,17 +69,30 @@ siedem.addEventListener("click", function () {
 
 
 //8
-const siem = document.querySelector('#guzik8')
-siem.addEventListener("click", function (){
-    const osmy = document.querySelector('#ha3').dataset;
-    const osiem = document.querySelector('#ha3').attributes;
-    console.log(osmy);
-    console.log(osiem);
-    for (const attribute of osiem) {
+document.querySelector('#dataset-attributes-button').addEventListener("click", function (){
+    const osmy = document.querySelector('#dataset-attributes-element');
+    console.log(osmy.dataset);
+    console.log(osmy.attributes);
+    const osiem = document.querySelector('#dataset-attributes-container');
+    for (const attribute of osiem.attributes) {
         let  para = document.createElement("p");
         para.innerHTML = "Atrybut: <b>" + attribute.nodeName +
             "</b> ma wartość </b>" + attribute.nodeValue + "</b>";
         osiem.appendChild(para);
     }
+});
 
-})
+//9
+const dzie = document.querySelector('#guzik9')
+dzie.addEventListener("click", function () {
+    let letters = '0123456789ABCDEF';
+    let index1 = Math.floor(=Math.random())
+    let index2 =
+    let index3 =
+    let index4 =
+    let index5 =
+    let index6 =
+
+    console.log(dzie);
+});
+
