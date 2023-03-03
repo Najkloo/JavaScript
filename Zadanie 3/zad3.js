@@ -86,13 +86,17 @@ document.querySelector('#dataset-attributes-button').addEventListener("click", f
 const dzie = document.querySelector('#guzik9')
 dzie.addEventListener("click", function () {
     let letters = '0123456789ABCDEF';
-    let index1 = Math.floor(=Math.random())
-    let index2 =
-    let index3 =
-    let index4 =
-    let index5 =
-    let index6 =
+    let index1 = Math.floor(Math.random() * 16);
+    let index2 = Math.floor(Math.random() * 16);
+    let index3 = Math.floor(Math.random() * 16);
+    let index4 = Math.floor(Math.random() * 16);
+    let index5 = Math.floor(Math.random() * 16);
+    let index6 = Math.floor(Math.random() * 16);
 
-    console.log(dzie);
+    let color = '#' + letters[index1] + letters[index2] + letters[index3]
+        + letters[index4] + letters[index5] + letters[index6];
+
+    console.log(color);
+    document.querySelector("#tekstari").style.backgroundColor = color;
 });
 
