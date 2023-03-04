@@ -10,6 +10,7 @@ body {
     background-color: darkgray;
     color: cornflowerblue;
     font-family: "DejaVu Sans";
+    text-align: center;
 
 }
 pre {
@@ -20,21 +21,23 @@ a{
     text-decoration: none;
     color: cornflowerblue;
 }
+
     </style>
 </head>
 
 <body>
-
-<h1>Rozdział 1 <a id="cos1" href="/" onClick="op('poka'); return false;">&#8965</a></h1>
+<fieldset style="border-color: cornflowerblue">
+<legend style="font-family: 'Droid Sans Mono'; font-size: x-large">BAJKI O HTML</legend>
+<h1>Rozdział 1 <a id="cos1" href="/" onClick="return op('poka', 'cos1');">&#8965;</a></h1>
 <pre id="poka">Cos tam</pre>
-<h1>Rozdział 1 <a id="cos2" href="/" onClick="op('poka1'); return false;">&#8965</a></h1>
+<h1>Rozdział 2 <a id="cos2" href="/" onClick="return op('poka1', 'cos2');">&#8965;</a></h1>
 <pre id="poka1">Cos tam</pre>
-<h1>Rozdział 1 <a id="cos3" href="/" onClick="op('poka2'); return false;">&#8965</a></h1>
+<h1>Rozdział 3 <a id="cos3" href="/" onClick="return op('poka2', 'cos3');">&#8965;</a></h1>
 <pre id="poka2">Cos tam</pre>
-<h1>Rozdział 1 <a id="cos4" href="/" onClick="op('poka3'); return false;">&#8965</a></h1>
+<h1>Rozdział 4 <a id="cos4" href="/" onClick="return op('poka3', 'cos4');">&#8965;</a></h1>
 <pre id="poka3">Cos tam</pre>
-<h1>Rozdział 1 <a id="cos5" href="/" onClick="op('poka4'); return false;">&#8965</a></h1>
+<h1>Rozdział 5 <a id="cos5" href="/" onClick="return op('poka4', 'cos5');">&#8965;</a></h1>
 <pre id="poka4">Cos tam</pre>
-
+</fieldset>
 </body>
 </html>
