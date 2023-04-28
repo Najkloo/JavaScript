@@ -12,5 +12,8 @@ let d2 = Math.min(-6.5, 4.3);
 
 let e = Math.pow(-6.5);
 let e2 = Math.pow(4.3);
-document.getElementById('pierwszy')
+
+let f = Math.sqrt(-6.5);
+let f2 = Math.sqrt(4.3);
+console.log(a);
 
