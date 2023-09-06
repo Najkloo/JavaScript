@@ -18,4 +18,5 @@ for (let i = 0; i < 100; i++){
         jednen.appendChild(kolum);
     }
     kolum.appendChild(put)
+    kolum.appendChild(put)
 }
