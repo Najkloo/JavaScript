@@ -14,13 +14,13 @@
         }
     </style>
     <script>
-        function add()
-        {
+        function add() {
             var numOne, numTwo, sum;
             numOne = parseInt(document.getElementById("validationDefault01").value);
             numTwo = parseInt(document.getElementById("validationDefault02").value);
             sum = numOne + numTwo;
-            document.getElementById("answer").value = sum;
+            document.getElementById("answer").textContent = sum;
+            console.log({numOne})
         }
     </script>
 </head>
@@ -36,7 +36,7 @@
         <input type="number" class="form-control" id="validationDefault02" name="dwa"  required>
     </div>
 </form>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" onclick="add()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Oblicz sumę
 </button>
 
@@ -46,7 +46,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Suma podanych liczb</h5>
-                <button type="button" onclick="add()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p id="answer"></p>
